@@ -7,14 +7,14 @@ from bs4 import BeautifulSoup
 
 with open("blank/index.html") as file:
     src = file.read()
-# print(src)
+#print(src)
 
-soup = BeautifulSoup(src, "lxml")
+soup = BeautifulSoup(src,"lxml")
 
-# title = soup.title
-# print(title)
-# print(title.text)
-# print(title.string)
+title = soup.title
+#print(title)
+#print(title.text)
+#print(title.string)
 
 # .find() .find_all()
 # page_h1 = soup.find("h1")
@@ -83,7 +83,7 @@ soup = BeautifulSoup(src, "lxml")
 # post_title = soup.find(class_="post__date").find_previous_sibling().find_next().text
 # print(post_title)
 
-links = soup.find(class_="some__links").find_all("a")
+#links = soup.find(class_="some__links").find_all("a")
 # print(links)
 #
 # for link in links:
@@ -105,5 +105,5 @@ links = soup.find(class_="some__links").find_all("a")
 # find_a_by_text = soup.find("a", text=re.compile("Одежда"))
 # print(find_a_by_text)
 
-find_all_clothes = soup.find_all(text=re.compile("([Оо]дежда)"))
-print(find_all_clothes)
+#find_all_clothes = soup.find_all(text=re.compile("([Оо]дежда)"))
+#print(find_all_clothes)
